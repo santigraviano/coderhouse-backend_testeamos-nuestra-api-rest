@@ -1,0 +1,17 @@
+extends layouts/main.pug
+
+block content
+  div(class="row")
+    div(class="col-lg-4")
+      img(src=`/storage/${user.avatar}`)
+    div(class="col-lg-8")
+      h1= user.name
+      p
+        b Edad: 
+        span= user.age
+      p
+        b Dirección: 
+        span= user.address
+      p
+        b Número de teléfono: 
+        span= user.cellphone

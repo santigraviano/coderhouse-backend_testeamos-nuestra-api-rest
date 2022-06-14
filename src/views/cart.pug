@@ -1,0 +1,22 @@
+extends layouts/main.pug
+
+block content
+  div(class="row")
+    div(class="col-lg-12 col-12")
+      table(class="table")
+        thead
+          tr
+            th Imagen
+            th Nombre
+            th Precio
+        tbody
+          each product in cart.products
+            tr
+              td
+                img(src=product.image class="product-image")
+              td= product.name
+              td= `$${product.price}`
+      button(class="btn btn-primary" id="sendOrder") Enviar pedido
+
+block scripts
+  script(src="/js/cart.js") 

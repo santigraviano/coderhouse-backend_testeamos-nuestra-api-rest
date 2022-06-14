@@ -1,0 +1,20 @@
+nav(class="navbar navbar-expand-lg navbar-light bg-light")
+  div(class="container-fluid")
+    a(class="navbar-brand") Tienda 
+    button(class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarContent")
+      span(class="navbar-toggler-icon")
+    div(class="collapse navbar-collapse" id="mainNavbarContent")
+      ul(class="navbar-nav me-uato mb-2 mb-lg-0")
+        li(class="nav-item")
+          a(class="nav-link" href="/") Productos
+        li(class="nav-item")
+          a(class="nav-link" href="/carrito") Carrito
+        li(class="nav-item dropdown")
+          a(class="nav-link dropdown-toggle" data-bs-toggle="dropdown")=user.name
+          ul(class="dropdown-menu")
+            li
+              a(class="dropdown-item" href="/mi-cuenta") Mi cuenta
+            li
+              a(class="dropdown-item" id="logoutButton") Cerrar sesión
+
+          
